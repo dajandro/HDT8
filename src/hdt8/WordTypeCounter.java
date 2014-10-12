@@ -1,10 +1,8 @@
-/*
-UVG
-Algoritmos y Estructuras de Datos - 2011
-Hoja de trabajo 7
-Autor: Eduardo Castellanos
-
-Descripcion: Programa principal.
+/**
+* Universidad del Valle de Guatemala
+* Pablo Diaz 13203
+* Daniel Orozco 13312
+* Con base en programa de: Eduardo Castellanos
 */
 import java.io.*;
 
