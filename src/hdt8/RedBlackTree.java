@@ -14,7 +14,7 @@ public class RedBlackTree implements WordSet {
     private final int RED   = 0;
     private RedBlackNode header;
     private static final RedBlackNode nullNode;
-    static         // Inicializador de nodo nullo
+    static         // Inicializador de nodo nulo
     {
         nullNode = new RedBlackNode( null );        
         nullNode.setLeft(nullNode);
