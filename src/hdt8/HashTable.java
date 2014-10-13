@@ -14,7 +14,8 @@ import java.util.Iterator;
  */
 class HashTable implements WordSet {
 
-    private final HashMap<Integer,Word> map;
+    private final HashMap<Integer,Word> map; //se utilizó hashmap y no hashtable porque es una clase depreciada
+    //y obsoleta del java collection framework
     private int key;
     
     public HashTable() {
