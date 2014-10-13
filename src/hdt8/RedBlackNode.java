@@ -15,15 +15,17 @@ public class RedBlackNode {
         private RedBlackNode right;
         private int color;
         
+        // Constructor
         public RedBlackNode(Word word) {
             this(word, null, null );
         }
         
+        // Constructor con parámetros
         public RedBlackNode(Word word, RedBlackNode lt, RedBlackNode rt ) {
             this.element  = word;
             this.left     = lt;
             this.right    = rt;
-            this.color    = 1; // Black
+            this.color    = 1; // Represetna Black
         }
         
         public void setLeft(RedBlackNode node)
