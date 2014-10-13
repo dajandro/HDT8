@@ -5,7 +5,7 @@
 * Con base en programa de: Eduardo Castellanos
 */
 
-import java.util.TreeMap;
+//import java.util.TreeMapN;
 
 class WordSetFactory {
 	
@@ -14,7 +14,7 @@ class WordSetFactory {
 	//                         2 = implementado con Red black tree
 	//                         3 = implementado con Splay Tree
 	//                         4 = implementado con Hash Table
-	//                         5 = implementado con TreeMap (de Java Collection Framework)
+	//                         5 = implementado con TreeMapN (de Java Collection Framework)
 	
 	public static WordSet generateSet(int tipo)
 	{
@@ -25,9 +25,9 @@ class WordSetFactory {
 			// if tipo == 2 cree una instancia para un Wordset implementao con Red Black Tree
 			// if tipo == 3 cree una instancia para un Wordset implementado con Splay Tree
 			// if tipo == 4 cree una instancia para un Wordset implementado con Hash table
-			// if tipo == 5 cree una instancia para un Wordset implementado con TreeMap
+			// if tipo == 5 cree una instancia para un Wordset implementado con TreeMapN
                 if (tipo == 5)
-                    return (WordSet) new TreeMap();
+                    return new TreeMapN();
                 else
                     if (tipo == 2)
                         return new RedBlackTree();
