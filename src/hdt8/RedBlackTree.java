@@ -27,13 +27,20 @@ public class RedBlackTree implements WordSet {
     private static RedBlackNode grand;
     private static RedBlackNode great;
     
+    public RedBlackTree( ) {
+        header = new RedBlackNode(null);
+        //header.left = header.right = nullNode;
+        header.setLeft(nullNode);
+        header.setRight(nullNode);
+    }
+    
     /**
      * Compare item and t.element, using compareTo, with
      * caveat that if t is header, then item is always larger.
      * This routine is called if is possible that t is header.
      * If it is not possible for t to be header, use compareTo directly.
      */
-    private final int compare( Comparable item, RedBlackNode t ) {
+    private final int compare( Word item, RedBlackNode t ) {
         if( t == header )
             return 1;
         else
@@ -77,7 +84,7 @@ public class RedBlackTree implements WordSet {
      * @param parent the parent of the root of the rotated subtree.
      * @return the root of the rotated subtree.
      */
-    private RedBlackNode rotate( Comparable item, RedBlackNode parent ) {
+    private RedBlackNode rotate( Word item, RedBlackNode parent ) {
         RedBlackNode temp;
         if( compare( item, parent ) < 0 )
         {   
@@ -134,8 +141,8 @@ public class RedBlackTree implements WordSet {
         }
         
         // Insertion fails if already present
-        if( current != nullNode )
-            throw new DuplicateItemException( wordObject.toString( ) );
+        //if( current != nullNode )
+            //throw new DuplicateItemException( wordObject.toString( ) );
         current = new RedBlackNode( wordObject, nullNode, nullNode );
         
         // Attach to parent
